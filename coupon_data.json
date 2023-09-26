@@ -1,0 +1,253 @@
+{
+    "getStoreById": {
+        "storeId": "265733924058551552",
+        "launchpadPathname": "/",
+        "label": "oyo",
+        "name": "OYO",
+        "country": "IN",
+        "url": "https://www.oyorooms.com/in",
+        "active": true,
+        "supported": true,
+        "hasIcon": true,
+        "supportStage": "PRE_DATABASE",
+        "notesSupport": null,
+        "notesMonetization": null,
+        "notesWorker": null,
+        "created": 1581359292838,
+        "updated": 1695708389607,
+        "checked": 0,
+        "position": null,
+        "score": 2910,
+        "shoppers24h": 204,
+        "shoppers30d": 4573,
+        "shoppersChange": 34,
+        "numSavings24h": 15,
+        "numSavings30d": 378,
+        "numSavingsChange": 20,
+        "avgSavings24h": 194433,
+        "avgSavings30d": 205120,
+        "avgSavingsChange": -5,
+        "metadata": "{\"pns_siteSelShowHoneyGold\":\".c-11tk0uk\",\"pns_observerTarget\":\"body\",\"androidFSEnabled\":true,\"iosFSEnabled\":true,\"pns_siteSelCartCodeBox\":\"div:contains(\\\"More offers\\\"):visible:last, body:has(div:contains(\\\"More offers\\\"):visible:last) input[placeholder=\\\"Enter Coupon Code\\\"], body:has(div:contains(\\\"More offers\\\"):visible:last) input[placeholder=\\\"Masukan kode kupon\\\"]\",\"pns_siteSelCartTotalPrice\":\".listingPrice__finalPrice.listingPrice__finalPrice\",\"pns_siteSelCartTotalPrice_mobile\":\"div:has(>div:contains(Total amount)):last span:first\",\"pns_siteSelCartCodeSubmit\":\"try {\\r\\n\\tconst field = document.querySelector('input[placeholder=\\\"Enter Coupon Code\\\"], input[placeholder=\\\"Masukan kode kupon\\\"]')\\r\\n\\tfield.dispatchEvent(new Event('input', { bubbles: true }));\\r\\n\\tfield.dispatchEvent(new Event('change'));\\r\\n\\tfield.dispatchEvent(new Event('keyup'));\\r\\n\\tfield.dispatchEvent(new Event('blur'));\\r\\n\\tfield.dispatchEvent(new Event('focus'));\\r\\n\\tvar couponBtn = document.evaluate('//input[@placeholder=\\\"Enter Coupon Code\\\"]/following::button[1]', document, null, XPathResult.ANY_TYPE, null ).iterateNext();\\r\\n  if (couponBtn) {\\r\\n    couponBtn.click();\\r\\n  } \\r\\n  else{\\r\\n    let xpath = document.evaluate('//button[@type=\\\"button\\\" and contains(., \\\"Terapkan\\\")]',\\r\\n            document,\\r\\n            null,\\r\\n            XPathResult.ANY_TYPE,\\r\\n            null\\r\\n    ).iterateNext();\\r\\n    xpath.click();\\r\\n  }\\r\\n} catch(e) {}\",\"pns_siteSelCartCodeSubmit_v2\":\"@bubbleEvents(\\\"inputSelector\\\":<M>input[placeholder*=\\\"Coupon\\\"], input[placeholder*=\\\"kupon\\\"]</M>,\\\"eventsInOrder\\\":<M>input,blur,focus,change</M>)@sleep(\\\"timeout\\\":<M>500</M>)@editAttributesAndClasses(\\\"selector\\\":<M>.oyo-cell:has(input[placeholder*=\\\"Coupon\\\"]) + div button, .oyo-cell:has(input[placeholder*=\\\"kupon\\\"]) + div button</M>,\\\"removeAttributes\\\":<M>disabled</M>)@click(\\\"selector\\\":<M>.oyo-cell:has(input[placeholder*=\\\"Coupon\\\"]) + div button, .oyo-cell:has(input[placeholder*=\\\"kupon\\\"]) + div button</M>)\",\"pns_siteTimeBetween\":7000,\"pns_sitePreApplyCodeAction\":\"const COUPON_TOGGLE = document.evaluate(\\\"//div[contains(text(),'More offers')]\\\", document, null, XPathResult.ANY_TYPE, null ).iterateNext();\\r\\ntry{\\r\\n  if (!COUPON_TOGGLE) COUPON_TOGGLE.click();\\r\\n}catch(e){}\\r\\n\\r\\ntry{\\r\\n  let COUPON_TOGGLE_1 = document.evaluate('.//*[@data-ol-has-click-handler][contains(normalize-space(),\\\"Apply coupon\\\")]', document, null, XPathResult.ANY_TYPE, null ); \\r\\n  let cpn_btn_1 = COUPON_TOGGLE_1.iterateNext();\\r\\n  cpn_btn_1.click();\\r\\n}catch(e){}\\r\\n\\r\\nconst callbackFn = mutations => {\\r\\n  for (let mutation of mutations) { \\r\\n    let nodeText = mutation.addedNodes[0]?.previousSibling?.firstChild?.textContent || null\\r\\n    if (/apply coupon/i.test(nodeText)) COUPON_TOGGLE.click()\\r\\n  }\\r\\n}\\r\\n\\r\\nconst WATCHER = new MutationObserver(callbackFn)\\r\\nconst MORE_OFFERS_CONTAINER = document.querySelector('[name=\\\"hotelDetailCarousel\\\"] + span + div')\\r\\n\\r\\nWATCHER.observe(MORE_OFFERS_CONTAINER, {\\r\\n  childList: true,\\r\\n  subtree: true\\r\\n})\",\"pns_sitePreApplyCodeAction_v2\":\"@click(\\\"selector\\\":<M>[lazyload=\\\"true\\\"] + div span + div</M>)\",\"pns_siteTimeBetweenPreApply\":3000,\"pns_siteRemoveCodeAction\":\"try {\\r\\n  // element that remove-code triggers\\r\\n  document.querySelector('input[data-state=\\\"coupon_selected\\\"] + span').click();\\r\\n} catch(e) {}\\r\\n\\r\\ntry {\\r\\n  document.evaluate('//*[text()=\\\"Apply coupon\\\" or text()=\\\"apply coupon\\\"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null ).singleNodeValue.click();\\r\\n} catch(e) {}\\r\\n\\r\\ntry {\\r\\n  let observer = new MutationObserver(mutations => {\\r\\n    mutations.forEach(mutation => { \\r\\n      //console.log(mutation.previousSibling.innerText.includes(\\\"Apply coupon\\\"));\\r\\n    \\tif(mutation.previousSibling.innerText.includes(\\\"Apply coupon\\\")){ \\r\\n        document.evaluate('.//*[@data-ol-has-click-handler][contains(normalize-space(),\\\"Apply coupon\\\")]', document, null, XPathResult.ANY_TYPE, null).iterateNext().click();\\r\\n        return\\r\\n    \\t}\\r\\n    });\\r\\n  });\\r\\n      \\r\\n  const promo_cont = document.querySelector('[name=\\\"hotelPricingWidget\\\"]'); \\r\\n  \\r\\n  observer.observe(promo_cont, { \\r\\n  \\tchildList: true,\\r\\n  \\tsubtree: true\\r\\n  });\\r\\n} catch(e) {}\\r\\n\\r\\nsetTimeout(()=>{},8500);\\r\\n\",\"pns_siteRemoveCodeAction_v2\":\"@click(\\\"selector\\\":<M>[lazyload=\\\"true\\\"] + div span + div</M>)@sleep(\\\"timeout\\\":<M>2000</M>)@click(\\\"selector\\\":<M>.oyo-cell:has(input[placeholder*=\\\"Coupon\\\"]) + div button, .oyo-cell:has(input[placeholder*=\\\"kupon\\\"]) + div button</M>)@sleep(\\\"timeout\\\":<M>2000</M>)@click(\\\"selector\\\":<M>[lazyload=\\\"true\\\"] + div span + div</M>)\",\"pns_siteTimeBetweenRemove\":7000,\"pns_siteSelCartHideErrors\":\"\",\"pns_siteSelCartHideErrors2\":\"\",\"pns_siteTimeFinish\":6000,\"pns_siteCodeMax\":3,\"formatPriceDivisor\":\"\",\"pns_siteSelCartInitCode\":\"span:contains('coupon applied')\",\"pns_siteSelCartInitCodeRegex\":\"(?:(\\\\w+) (?:(?=aplicado)|(?=coupon)|(?=cupom)|(?=クーポンが適用されました)))\",\"pns_siteSelCartInitAttribute\":\"\",\"isGracefulFailure\":false,\"pns_siteSelCartHideWhileWorking\":\"\",\"pns_dacConcurrency\":\"\"}",
+        "partialUrls": [
+            {
+                "domain": "oyorooms.com",
+                "partialURL": "oyorooms.com"
+            },
+            {
+                "domain": "oyorooms.com",
+                "partialURL": "oyorooms.com/in"
+            }
+        ],
+        "productRegex": null,
+        "freeShippingThreshold": null,
+        "publicCoupons": [
+            {
+                "code": "DeepakGunpal 1",
+                "dealId": "497273027340181968",
+                "created": 1694415495485,
+                "description": "",
+                "expires": null,
+                "exclusive": false,
+                "hidden": false,
+                "restrictions": null,
+                "rank": 0.585,
+                "applied_acc_count": 237,
+                "applied_acc_last_ts": 1695703582008,
+                "applied_acc_last_discount": 1004200,
+                "url": null,
+                "sources": [
+                    {
+                        "sourceType": "USER",
+                        "updated": 1694415495501,
+                        "sourceUser": {
+                            "source_id": "8608282197040959615",
+                            "source_name": "undefined undefined",
+                            "has_image": null
+                        }
+                    }
+                ],
+                "meta": {
+                    "percentOff": null,
+                    "dollarOff": null,
+                    "dollarMinimum": null,
+                    "noMinimum": null,
+                    "freeShipping": null,
+                    "freeDelivery": null,
+                    "limitedTime": null,
+                    "firstPurchase": null,
+                    "entirePurchase": null,
+                    "anyItem": null,
+                    "sitewide": null,
+                    "freeGift": null,
+                    "bogo": null,
+                    "couponClass": "Popular coupon",
+                    "onlineOnly": null,
+                    "exclusions": null
+                },
+                "tags": []
+            },
+            {
+                "code": "DeepakGunpal 2",
+                "dealId": "467267771380558654",
+                "created": 1679764491372,
+                "description": "",
+                "expires": null,
+                "exclusive": false,
+                "hidden": false,
+                "restrictions": null,
+                "rank": 0.584,
+                "applied_acc_count": 2898,
+                "applied_acc_last_ts": 1695703582008,
+                "applied_acc_last_discount": 1019800,
+                "url": null,
+                "sources": [
+                    {
+                        "sourceType": "USER",
+                        "updated": 1679764491393,
+                        "sourceUser": {
+                            "source_id": "8762851780869781256",
+                            "source_name": "undefined undefined",
+                            "has_image": null
+                        }
+                    }
+                ],
+                "meta": {
+                    "percentOff": null,
+                    "dollarOff": null,
+                    "dollarMinimum": null,
+                    "noMinimum": null,
+                    "freeShipping": null,
+                    "freeDelivery": null,
+                    "limitedTime": null,
+                    "firstPurchase": null,
+                    "entirePurchase": null,
+                    "anyItem": null,
+                    "sitewide": null,
+                    "freeGift": null,
+                    "bogo": null,
+                    "couponClass": "Hot deal",
+                    "onlineOnly": null,
+                    "exclusions": null
+                },
+                "tags": []
+            },
+            {
+                "code": "DeepakGunpal 3",
+                "dealId": "497269163517931524",
+                "created": 1694413608043,
+                "description": "",
+                "expires": null,
+                "exclusive": false,
+                "hidden": true,
+                "restrictions": null,
+                "rank": 0.503,
+                "applied_acc_count": 50,
+                "applied_acc_last_ts": 1695665433008,
+                "applied_acc_last_discount": 2600,
+                "url": null,
+                "sources": [
+                    {
+                        "sourceType": "USER",
+                        "updated": 1694413608055,
+                        "sourceUser": {
+                            "source_id": "8608282197040959615",
+                            "source_name": "undefined undefined",
+                            "has_image": null
+                        }
+                    }
+                ],
+                "meta": {
+                    "percentOff": null,
+                    "dollarOff": null,
+                    "dollarMinimum": null,
+                    "noMinimum": null,
+                    "freeShipping": null,
+                    "freeDelivery": null,
+                    "limitedTime": null,
+                    "firstPurchase": null,
+                    "entirePurchase": null,
+                    "anyItem": null,
+                    "sitewide": null,
+                    "freeGift": null,
+                    "bogo": null,
+                    "couponClass": "Verified coupon",
+                    "onlineOnly": null,
+                    "exclusions": null
+                },
+                "tags": []
+            }
+        ],
+        "providerId": "TT",
+        "forceJsRedirect": false,
+        "affiliate": {
+            "extension_links": [
+                {
+                    "val": 1,
+                    "url": "http://out.joinhoney.com/store/265733924058551552/extension_links",
+                    "providers": [
+                        "TT"
+                    ]
+                }
+            ],
+            "hbc": [
+                {
+                    "val": 1,
+                    "url": "http://out.joinhoney.com/store/265733924058551552/hbc",
+                    "providers": [
+                        "TT"
+                    ]
+                }
+            ],
+            "offer_claim": [
+                {
+                    "val": 1,
+                    "url": "http://out.joinhoney.com/store/265733924058551552/offer_claim",
+                    "providers": [
+                        "TT"
+                    ]
+                }
+            ],
+            "website": [
+                {
+                    "val": 1,
+                    "url": "http://out.joinhoney.com/store/265733924058551552/website",
+                    "providers": [
+                        "TT"
+                    ]
+                }
+            ]
+        },
+        "affiliateURL": "https://tc.tradetracker.net/?c=29504&m=12&a=367017&r=$param0&u=$turlenc",
+        "affiliateRestrictions": null,
+        "affiliateTagTypes": [
+            "OFFER_ACTIVATE",
+            "EXT_LINK",
+            "EXT_BUTTON_CLICK",
+            "WEB_LINK"
+        ],
+        "ugc_allowed": true,
+        "ugcAllowed": true,
+        "ugc": [],
+        "gold": {
+            "minPercent": 0,
+            "maxPercent": 0,
+            "started": 1690857510478,
+            "manual": false,
+            "active": false,
+            "id": "265733924058551552",
+            "storeId": "265733924058551552",
+            "isFlatFee": false,
+            "minFlatFee": 0,
+            "maxFlatFee": 0
+        },
+        "tipsConfig": {
+            "launchpadPathname": "/",
+            "isLaunchpadDisabled": false,
+            "isPdpDisabled": false,
+            "disabledCategories": [],
+            "autopopDisabledCategories": [],
+            "badgeCtaTextDisabledCategories": []
+        },
+        "expiresSoft": 1695711778
+    }
+}
